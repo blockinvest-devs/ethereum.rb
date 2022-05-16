@@ -1,7 +1,5 @@
-# frozen_string_literal: true
 # coding: utf-8
-
-lib = File.expand_path("lib", __dir__).freeze
+lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
 
 require "ethereum/version"
@@ -23,7 +21,7 @@ Gem::Specification.new do |spec|
     "documentation_uri" => "https://q9f.github.io/eth.rb/",
     "github_repo" => "https://github.com/q9f/eth.rb",
     "source_code_uri" => "https://github.com/q9f/eth.rb",
-  }.freeze
+  }
 
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "https://rubygems.org"
